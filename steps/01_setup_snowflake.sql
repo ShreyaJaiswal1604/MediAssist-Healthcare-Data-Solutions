@@ -12,6 +12,12 @@ Last Updated: 1/1/2023
 
 -- See Getting Started section in Third-Party Packages (https://docs.snowflake.com/en/developer-guide/udf/python/udf-python-packages.html#getting-started)
 
+CREATE WAREHOUSE my_warehouse
+  WAREHOUSE_SIZE = 'SMALL'  -- You can specify the size: XSMALL, SMALL, MEDIUM, LARGE, XLARGE, etc.
+  AUTO_SUSPEND = 60          -- Automatically suspend the warehouse after 60 seconds of inactivity
+  AUTO_RESUME = TRUE         -- Automatically resume the warehouse when a query is submitted
+  MAX_CONCURRENCY_LEVEL = 10;  -- Maximum number of concurrent queries
+
 
 -- ----------------------------------------------------------------------------
 -- Step #2: Create the account level objects
