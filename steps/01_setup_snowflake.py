@@ -5,7 +5,7 @@ USER = 'DOLPHIN'
 PASSWORD = 'Maapaa@1603'
 ACCOUNT = 'URB63596'
 # WAREHOUSE = 'None'  # Optional, can be set to None
-DATABASE = 'medi_assist_mimic_iv'
+DATABASE = 'mimic_iv_medi_assist'
 SCHEMA = 'raw'
 
 def create_database_and_schema():
