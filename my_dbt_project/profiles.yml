@@ -10,9 +10,9 @@ my_dbt_project:
       password: Maapaa@1603
 
       #role: [user role]
-      database: medi_assist_mimic_iv
-      warehouse: my_warehouse
-      schema: raw
+      database: mimic_iv_medi_assist
+      warehouse: animal_task_wh
+      schema: staging
       #threads: [1 or more]
       client_session_keep_alive: False
       #query_tag: [anything]

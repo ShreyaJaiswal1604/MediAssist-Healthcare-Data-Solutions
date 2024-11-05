@@ -1,0 +1,7 @@
+version: 2
+sources:
+  - name: raw
+    description: "Raw schema containing the MIMIC_ADMISSIONS_RAW table"
+    tables:
+      - name: MIMIC_ADMISSIONS_RAW
+        description: "Raw admissions data"
