@@ -3,25 +3,45 @@ import streamlit as st
 ##### Mainpage Content #####
 
 # Header and Application Image
+# Center-align the heading and remove gap above MediAssist
+st.markdown("""
+    <style>
+        .center-heading {
+            text-align: center;
+            margin-top: 0; /* Remove gap above heading */
+        }
+        .rainbow-header {
+            text-align: center;
+            background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+            -webkit-background-clip: text;
+            color: transparent;
+            font-size: 2.5em;
+            margin-top: 0; /* Remove gap above heading */
+        }
+    </style>
+""", unsafe_allow_html=True)
 
-col1, col2 = st.columns([3, 2.5])
+# Rainbow Header
+# Rainbow Divider
+st.header("", divider="rainbow")
+st.markdown("<h1 class='rainbow-header'>MediAssist</h1>", unsafe_allow_html=True)
+# Rainbow Divider
+st.header("", divider="rainbow")
+st.markdown("<h3 class='center-heading'>An Innovative AI-driven Healthcare Solution</h3>", unsafe_allow_html=True)
+st.markdown("<p class='center-heading'>Created by Yash Pankhania, Shreya Jaiswal, and Utkarsha Shirke</p>", unsafe_allow_html=True)
 
-with col1:
-    # Add the image in the first column
-    image_url = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUHsukDlu-Hr8VrNSeS5tm1HRXa9iOXNRhhw&s"
-    st.image(image_url, width=350)  # Specify the image width
+# Add the image as a centered banner
+image_url = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUHsukDlu-Hr8VrNSeS5tm1HRXa9iOXNRhhw&s"
+st.markdown(f"""<div style='text-align: center;'>
+                <img src='{image_url}' width='70%'>
+              </div>""", unsafe_allow_html=True)
 
-with col2:
-    # Add the headers next to the image
-    st.title("MediAssist")
-    st.subheader("An Innovative AI-driven healthcare solution")
-    st.write("Created by Yash Pankhania, Shreya Jaiswal and Utkarsha Shirke")
-    # Uncomment the following line if required:
-    # st.write("Fox Chase Cancer Center")
-
-# Add a horizontal line and then the summary section
+# Add a horizontal line
 st.markdown("---")
-    
+
+# Add the description
+st.write("MediAssist is a cutting-edge healthcare solution powered by AI, designed to transform patient care and streamline healthcare processes.")
+   
 #########################################################################################
 
 # Introduction
