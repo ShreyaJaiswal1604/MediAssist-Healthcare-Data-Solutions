@@ -1,50 +1,83 @@
-# MediAssist-Healthcare-Data-Solutions
-MediAssist is a healthcare solutions project focusing on medical coding and patient risk stratification using the MIMIC-IV dataset. It features a robust data pipeline for ingesting and analyzing healthcare data, aiming to enhance coding accuracy and improve patient outcomes through effective risk assessment.
+# MediAssist Healthcare Data Solutions 🏥💻
 
-## How to Create a Virtual Environment
+MediAssist is a comprehensive healthcare solution that leverages advanced data engineering and AI capabilities to enhance medical coding accuracy and improve patient outcomes through risk stratification. By utilizing the MIMIC-IV dataset, MediAssist establishes a robust pipeline for ingesting, transforming, and analyzing healthcare data, culminating in an intuitive UI for clinicians to access actionable insights.
 
-Here’s a step-by-step guide to creating a virtual environment in your code space:
+---
 
-1. **Open Your Code Space Terminal**  
-   You can usually find the terminal option in your IDE or directly through your code space interface.
+## 📌 Project Details
 
-2. **Install `virtualenv` (if not already installed)**  
-   You may need to install `virtualenv` if it’s not already available. Run the following command:
+**MediAssist** focuses on:
+- Accurate **ICD-10 code generation** for clinical notes.
+- Concise **clinical note summarization**.
+- Effective **patient risk stratification** to identify high-risk cases.
+- A user-friendly **Streamlit UI** for real-time clinician insights.
 
-   ```bash
-   pip install virtualenv
-    ```
+---
 
-3. ## Create a Virtual Environment
+## 🛠️ Tools and Technologies
 
-You can create a virtual environment by running:
+| **Category**          | **Tools/Technologies**                                                                 |
+|-----------------------|---------------------------------------------------------------------------------------|
+| **Programming**        | Python 🐍                                                                            |
+| **Data Engineering**   | Snowflake ❄️, DBT 🔄                                                                   |
+| **AI Models**          | Hugging Face 🤗, Vertex AI 🎯, Llama Models 🦙 , Bert Models                                        |
+| **Visualization/UI**   | Streamlit 🌐                                                                          |
+| **Dataset**            | MIMIC-IV 🩺                                                                            |
+| **PDF Generation**     | FPDF 📄                                                                               |
 
+---
+
+## 🏗️ Project Architecture
+
+![Architecture Diagram](path/to/architecture_image.png)  
+**"MediAssist Healthcare Data Workflow: From Raw Ingestion to Clinician Insights"**
+
+### Workflow:
+1. **Raw Data Ingestion**: MIMIC-IV data is loaded into the Snowflake **raw layer**.
+2. **Data Transformation**: DBT processes and transforms raw data into a **staging layer**.
+3. **Dimension Modeling**:
+   - ICD-10 codes are generated via:
+     1. Hugging Face serverless token.
+     2. Vertex AI model deployment.
+   - Clinical note summarization and risk stratification results are loaded into the dimension model.
+4. **Fact and Dimension Layers**: Finalized data is stored in **facts and dimensions** for analysis.
+5. **UI Layer**: A Streamlit-based application provides clinicians real-time access to patient insights.
+
+---
+
+## 🌟 Project Application
+
+The **MediAssist UI** empowers healthcare providers to:
+- **Retrieve patient admissions and discharge details.**
+- **Analyze clinical note summaries.**
+- **View ICD-10 medical codes with descriptions.**
+- **Assess patient risk stratification metrics.**
+
+---
+
+## ✨ Main Features
+
+- **Medical Code Generation**: Extract ICD-10 codes from clinical notes for documentation and billing.
+- **Clinical Note Summarization**: Concise summaries for quicker decision-making.
+- **Risk Stratification**: Identify high-risk patients for timely intervention.
+- **Report Generation**: Generate and download detailed admission/discharge reports in PDF format.
+- **Real-Time Insights**: Navigate patient data seamlessly through an intuitive UI.
+
+---
+
+## 🛠️ Installation and Setup
+
+### 🖥️ Prerequisites
+
+- Python 3.8 or later
+- Virtual environment tools (`virtualenv`)
+- Required Python packages: `snowflake-connector-python`, `fpdf`, `streamlit`, etc.
+
+---
+
+### ⚙️ Setup Guide
+
+#### **1. Clone the Repository**
 ```bash
-virtualenv venv
-
-
-4. **Activate the Virtual Environment**
-
-### On macOS/Linux:
-
-```bash
-    source venv/bin/activate
-```
-
-5. ## Install Required Packages
-
-Now that your virtual environment is active, you can install the required packages (e.g., `snowflake-connector-python`) without affecting the global Python environment:
-
-```bash
-pip install snowflake-connector-python
-```
-
-6. ## Deactivate the Virtual Environment
-
-When you’re done working, you can deactivate the virtual environment by simply running:
-
-```bash
-deactivate
-```
-
-7. DBT
+git clone https://github.com/your-username/MediAssist-Healthcare-Data-Solutions.git
+cd MediAssist-Healthcare-Data-Solutions
