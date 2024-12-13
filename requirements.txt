@@ -1,2 +1,6 @@
-snowflake-snowpark-python[pandas]
+snowflake-connector-python
 snowflake-cli-labs
+python -m spacy download en_core_web_sm
+pip install -U spacy
+python -m spacy download en_core_web_sm
+

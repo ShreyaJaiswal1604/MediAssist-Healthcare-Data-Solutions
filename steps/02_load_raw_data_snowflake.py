@@ -35,16 +35,14 @@ def generate_ddl_statement(column_names, data_types, table_name):
 
 
 
-def generate_copy_statement(table_name, stage_name, csv_file_path, file_format):
-    """
-    Generates a COPY INTO statement to load data from a file into a table.
-    """
+def generate_copy_statement(table_name,stage_name,csv_file_path,file_format):
     copy_command = f"""
     COPY INTO {table_name}
     FROM @{stage_name}/{csv_file_path}
     FILE_FORMAT = (FORMAT_NAME = '{file_format}')
-    ON_ERROR = 'CONTINUE';;
+    ;
     """
+
     return copy_command
 
 def create_file_format(session):
@@ -52,10 +50,10 @@ def create_file_format(session):
     session.sql("""
         CREATE OR REPLACE FILE FORMAT file_format_ddl
         TYPE = 'CSV'
-        COMPRESSION = 'auto'                   -- Specify GZIP compression for .gz files
+        COMPRESSION = 'GZIP'                   -- Specify GZIP compression for .gz files
         FIELD_DELIMITER = ','                   -- Specify the field delimiter
         PARSE_HEADER = TRUE                    -- Parse the header row for column names
-        FIELD_OPTIONALLY_ENCLOSED_BY = '\042'
+        FIELD_OPTIONALLY_ENCLOSED_BY = '"'
         ESCAPE_UNENCLOSED_FIELD = NONE 
         TRIM_SPACE = TRUE 
         ERROR_ON_COLUMN_COUNT_MISMATCH = FALSE;
@@ -67,16 +65,68 @@ def create_file_format(session):
     session.sql("""
         CREATE OR REPLACE FILE FORMAT file_format_load
         TYPE = 'CSV'
-        COMPRESSION = 'auto'                   -- Specify GZIP compression for .gz files
-        FIELD_DELIMITER = ','                   -- Specify the field delimiter
-        RECORD_DELIMITER = '\n' 
-        SKIP_HEADER = 1                      -- Parse the header row for column names
-        FIELD_OPTIONALLY_ENCLOSED_BY = '\042'     -- Optional field enclosure
-        ;
+        COMPRESSION = 'auto'                   
+        FIELD_DELIMITER = ','                   
+        RECORD_DELIMITER = '\n'
+        SKIP_HEADER = 1                      
+        FIELD_OPTIONALLY_ENCLOSED_BY = '"'
+        NULL_IF = ('NA', 'NULL', '')
+        ESCAPE_UNENCLOSED_FIELD = None;
     """).collect()
 
     print("File format 'file_format_load' created successfully.")
     print("===========")
+
+def create_audit_table(session):
+    """
+    Creates an audit table to log metadata about the data load process.
+    """
+    audit_table_ddl = """
+    CREATE TABLE IF NOT EXISTS data_load_audit (
+        load_id INT AUTOINCREMENT,          -- Changed to INT for AUTOINCREMENT
+        table_name STRING,
+        file_name STRING,
+        load_status STRING,
+        start_time TIMESTAMP,
+        end_time TIMESTAMP,
+        total_time STRING,                  -- Assuming you need total_time as STRING or change type if needed
+        file_size STRING,                   -- Assuming you need file_size as STRING or change type if needed
+        error_message STRING,
+        processed_rows INT,
+        PRIMARY KEY (load_id)
+    );
+    """
+    session.sql(audit_table_ddl).collect()
+    print("Audit table 'data_load_audit' created successfully.")
+
+
+def log_audit_record(session, table_name, file_name, load_status, start_time, end_time, error_message, processed_rows, file_size):
+    """
+    Logs a record in the audit table with file size in MB, total time, and processed rows.
+    """
+    # Calculate total load time in seconds
+    total_time = (end_time - start_time).total_seconds()
+
+    # # Convert file size from bytes to MB (or GB)
+    # file_size_mb = file_size / (1024 * 1024)  # Convert bytes to MB
+    # file_size_gb = file_size / (1024 * 1024 * 1024)  # Convert bytes to GB
+
+    # # You can choose which size unit to store (MB or GB), here I am using MB
+    # file_size_for_audit = round(file_size_gb, 2)  # Round to 2 decimal places
+
+    # Prepare the SQL query to insert the audit record
+    insert_sql = f"""
+    INSERT INTO data_load_audit (
+        table_name, file_name, load_status, start_time, end_time, total_time, file_size, error_message, processed_rows
+    ) VALUES (
+        '{table_name}', '{file_name}', '{load_status}', '{start_time}', '{end_time}', {total_time}, {file_size}, '{error_message}', {processed_rows}
+    );
+    """
+    
+    # Execute the insert query
+    session.sql(insert_sql).collect()
+    print("Audit record logged successfully.")
+
 
 def main():
     """
@@ -92,105 +142,141 @@ def main():
 
     # Create necessary file formats
     create_file_format(session)
+      # Create the audit table
+    create_audit_table(session)
 
     # List files in the internal stage
-    stg_files = session.sql("LIST @my_internal_stage").collect()
+    stg_files = session.sql("LIST @my_internal_stage_csv").collect()
     print("Files in stage:", stg_files)
 
 
+    utc_start_time = datetime.utcnow()
+    print("Process started at:", utc_start_time)
+
     for row in stg_files:
-        print("======================================================\n")
+        print(f"======================= PROCESSING TABLE : {row}===============================\n")
+        print("Processing row:", row)
+        
+        # Convert row to dictionary
         row_value = row.as_dict()
+        print("Row as dictionary:", row_value)
+        
+        # Extract the staged file path value
         stg_file_path_value = row_value.get('name')
+        print("Staged file path value:", stg_file_path_value)
+        file_size = row_value.get('size')  # Get the file size in bytes
 
+        print("File size:", file_size)
+
+        # Split file path and name
         file_path, file_name = os.path.split(stg_file_path_value)
-        print(f"Processing file: {file_name}")
+        print("File path:", file_path)
+        print("File name:", file_name)
 
+        # Create staged location variable
         stg_location = "@" + file_path
+        print("Staged location:", stg_location)
+        
+        print(f"Processing target file: {file_name}")
+        
+        # Generate SQL for inferring schema
+        infer_schema_sql = """\
+            SELECT * 
+            FROM TABLE(
+                INFER_SCHEMA(
+                LOCATION=>'{}/',
+                files => '{}',
+                FILE_FORMAT => 'file_format_ddl'
+            )    
+        )
+        """.format(stg_location, file_name)
+        
+        print("\n=========== INFER SCHEMA SQL =============")
+        print(f"File: {file_name}")
+        print(infer_schema_sql)
 
-        if file_name == 'discharge.csv.gz' or file_name == 'pharmacy.csv.gz':
-                    # Construct the SQL for schema inference
-            infer_schema_sql = f"""
-                SELECT * 
-                FROM TABLE(
-                    INFER_SCHEMA(
-                        LOCATION => '{stg_location}/',
-                        FILES => '{file_name}',
-                        FILE_FORMAT => 'file_format_ddl',
-                        MAX_RECORDS_PER_FILE => 5
-                        
-                    )
-                );
-            """
-        else:
-            # Construct the SQL for schema inference
-            infer_schema_sql = f"""
-                SELECT * 
-                FROM TABLE(
-                    INFER_SCHEMA(
-                        LOCATION => '{stg_location}/',
-                        FILES => '{file_name}',
-                        FILE_FORMAT => 'file_format_ddl'
-                        
-                    )
-                );
-            """
+        # Execute schema inference
+        inferred_schema_rows = session.sql(infer_schema_sql).collect()
+        print("\nSchema inference completed. Inferred schema rows:")
+        print(inferred_schema_rows)
 
-        print(f"\n=========== INFER SCHEMA SQL =============\n{infer_schema_sql}\n")
-
-        # Infer the schema from the CSV file
-        try:
-            inferred_schema_rows = session.sql(infer_schema_sql).collect()
-            print("Inferred schema:", inferred_schema_rows)
-        except Exception as e:
-            print(f"Error inferring schema for {file_name}: {e}")
-            continue
-
+        # Prepare lists for column names and types
         col_name_lst = []
         col_data_type_lst = []
 
-        for schema_row in inferred_schema_rows:
-            row_value = schema_row.as_dict()
+        # Process each row in inferred schema
+        for row in inferred_schema_rows:
+            row_value = row.as_dict()
+            print("Inferred schema row:", row_value)
+            
             column_name = row_value.get('COLUMN_NAME')
             column_type = row_value.get('TYPE')
+
             col_name_lst.append(column_name)
             col_data_type_lst.append(column_type)
 
-        # Generate the DDL statement
-        table_name = f"mimic_{file_name.split('.')[0]}_raw"
+        print("Column names list:", col_name_lst)
+        print("Column data types list:", col_data_type_lst)
+
+        # Generate table name and DDL statement
+        table_name = "RAW_" + file_name.split('.')[0] 
         create_ddl_stmt = generate_ddl_statement(col_name_lst, col_data_type_lst, table_name.upper())
-        print("=================== DDL STATEMENT =====================\n\n", create_ddl_stmt)
+        print("=================== DDL STATEMENT =====================")
+        print(create_ddl_stmt)
 
-        # Generate the COPY INTO statement
-        copy_stmt = generate_copy_statement(table_name, 'my_internal_stage', file_name, 'file_format_load')
-        print("=================== COPY STATEMENT =====================\n\n", copy_stmt)
+        # Generate copy statement for loading data
+        copy_stmt = generate_copy_statement(table_name.upper(), 'my_internal_stage_csv', file_name, 'file_format_load')
+        print("=================== COPY STATEMENT =====================")
+        print(copy_stmt)
 
-        # Write SQL statements to a file
-        sql_file_path = f"{table_name}.sql"
-        print(f"Writing SQL statements to: {sql_file_path}")
+        # Define SQL file path and save DDL and copy statements to file
+        sql_file_path = table_name.upper() + ".sql"
+        print("=================== SQL FILE PATH =====================")
+        print("File path for saving SQL:", sql_file_path)
         with open(sql_file_path, "w") as sql_file:
-            sql_file.write("---- Creating table ----\n\n")
+            sql_file.write("---- Following statement is creating table\n\n")
             sql_file.write(create_ddl_stmt)
-            sql_file.write("\n---- Copying data into table ----\n")
+            sql_file.write("\n-- Following statement is executing copy command\n")
             sql_file.write(copy_stmt)
+        print("SQL statements written to file:", sql_file_path)
 
-        # Execute the DDL and COPY statements
         try:
+            # Execute DDL to create the table
+            start_time = datetime.utcnow()
+            # Execute DDL to create the table
             session.sql(create_ddl_stmt).collect()
-            print(f"Table {table_name} created successfully.")
-        except Exception as e:
-            print(f"Error creating table {table_name}: {e}")
-            continue
+            print("Table created successfully with DDL statement.")
 
-        try:
+            # Execute copy command to load data into the table
             session.sql(copy_stmt).collect()
-            print(f"Data loaded into {table_name} successfully.")
-        except Exception as e:
-            print(f"Error loading data into {table_name}: {e}")
-            continue
+            print("Data loaded into the table with COPY statement.")
 
+            # Query the target table to get the row count after loading the data
+            row_count_result = session.sql(f"SELECT COUNT(*) FROM {table_name}").collect()
+            processed_rows = row_count_result[0][0]  # Extract row count from the result
+            print(f"Processed rows: {processed_rows}")
+
+            # Calculate total load time
+            end_time = datetime.utcnow()
+
+            # Log success in audit table
+            log_audit_record(session, table_name, file_name, 'SUCCESS', start_time, end_time, None, processed_rows, file_size)
+
+
+        except Exception as e:
+            # Log failure in audit table
+            end_time = datetime.utcnow()
+            log_audit_record(session, table_name, file_name, 'FAILURE', utc_start_time, end_time, str(e), 0, file_size)
+
+            print(f"Exception - {e}")
+
+
+
+    # End of processing and time calculation
     utc_end_time = datetime.utcnow()
-    print("Total time taken to load the entire data:", utc_end_time - utc_start_time)
+    print("Process completed at:", utc_end_time)
+    print("Total processing time:", utc_end_time - utc_start_time)
+
 
 if __name__ == "__main__":
     main()

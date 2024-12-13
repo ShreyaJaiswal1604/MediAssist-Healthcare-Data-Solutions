@@ -1,7 +1,75 @@
 version: 2
 sources:
-  - name: raw
+  - name: raw_mimic
     description: "Raw schema containing the MIMIC_ADMISSIONS_RAW table"
+    schema: raw_mimic  # Ensure this is correct
     tables:
-      - name: MIMIC_ADMISSIONS_RAW
+      - name: RAW_ADMISSIONS
         description: "Raw admissions data"
+      - name: RAW_DISCHARGE
+        description: "Raw discharge data"
+      - name: RAW_DRGCODES
+        description: "Raw DRG codes data"
+      - name: RAW_D_ICD_DIAGNOSES
+        description: "Raw ICD Diagnoses data"
+      - name: RAW_D_ICD_PROCEDURES
+        description: "Raw ICD Procedures data"
+      - name: RAW_PHARMACY
+        description: "Raw pharmacy data"
+
+  # Staging Schema Definition
+  # Staging Schema Definition
+  - name: staging_mimic
+    description: "Staging schema containing transformed MIMIC-IV data"
+    schema: STAGING_MIMIC  # Ensure this matches the schema in Snowflake
+    tables:
+      - name: STG_ADMISSIONS
+        description: "Staging admissions data"
+      - name: STG_DISCHARGE
+        description: "Staging discharge data"
+      - name: STG_DRGCODES
+        description: "Staging DRG codes data"
+      - name: STG_D_ICD_DIAGNOSES
+        description: "Staging ICD Diagnoses data"
+      - name: STG_D_ICD_PROCEDURES
+        description: "Staging ICD Procedures data"
+      - name: STG_PHARMACY
+        description: "Staging pharmacy data"
+
+  - name: prod_mimic
+    description: "Production schema containing final MIMIC-IV data"
+    schema: PROD_MIMIC  # Ensure this matches the schema in Snowflake
+    tables:
+      - name: DIM_MEDICAL_CODES_LLM
+        description: "Dimension table containing LLM-generated medical codes"
+        columns:
+          - name: DMC_RECORD_ID
+            description: "Unique identifier for medical codes"
+            tests:
+              - unique
+              - not_null
+          - name: DMC_ICD_CODE
+            description: "Generated ICD-10 code"
+            tests:
+              - not_null
+          - name: DIS_RECORD_ID
+            description: "Discharge record ID"
+            tests:
+              - not_null
+
+      - name: DIM_ICD_DIAGNOSES_PROCEDURES
+        description: "Dimension table containing ICD diagnoses and procedures data"
+        columns:
+          - name: ICD_RECORD_ID
+            description: "Unique identifier for ICD Diagnoses/Procedures"
+            tests:
+              - unique
+              - not_null
+          - name: ICD_CODE
+            description: "ICD-10 code for Diagnoses/Procedures"
+            tests:
+              - not_null
+          - name: ICD_TYPE
+            description: "Type of the ICD code (Diagnosis/Procedure)"
+          - name: ICD_VERSION
+            description: "Version of the ICD code"

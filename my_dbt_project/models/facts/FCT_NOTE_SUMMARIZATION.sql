@@ -1,0 +1,18 @@
+{{ config(
+    materialized='table',
+    schema='prod_mimic'
+) }}
+
+SELECT
+    ROW_NUMBER() OVER (ORDER BY ADM.ADM_ADMISSION_ID) AS FNS_RECORD_ID,  -- Surrogate Key
+    ADM.ADM_ADMISSION_ID,
+    DIS.DIS_RECORD_ID,
+    PHR.PHR_PHARMACY_ID
+FROM
+    {{ ref('DIM_ADMISSIONS') }} AS ADM
+LEFT JOIN
+    {{ ref('DIM_DISCHARGE') }} AS DIS
+    ON ADM.ADM_ADMISSION_ID = DIS.DIS_HADM_ID
+LEFT JOIN
+    {{ ref('DIM_PHARMACY') }} AS PHR
+    ON ADM.ADM_ADMISSION_ID = PHR.PHR_HADM_ID

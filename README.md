@@ -46,3 +46,5 @@ When you’re done working, you can deactivate the virtual environment by simply
 ```bash
 deactivate
 ```
+
+7. DBT

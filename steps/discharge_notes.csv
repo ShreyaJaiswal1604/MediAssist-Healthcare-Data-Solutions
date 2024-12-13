@@ -1,0 +1,906 @@
+SUBJECT_ID,HADM_ID,TEXT,cleaned_text
+15992303,22502053," 
+Name:  ___               Unit No:   ___
+ 
+Admission Date:  ___              Discharge Date:   ___
+ 
+Date of Birth:  ___             Sex:   M
+ 
+Service: MEDICINE
+ 
+Allergies: 
+Amoxicillin / azithromycin
+ 
+Attending: ___
+ 
+Chief Complaint:
+Liver Failure
+ 
+Major Surgical or Invasive Procedure:
+___: Bone marrow biopsy
+___: Liver biopsy
+___: EGD
+
+ 
+History of Present Illness:
+___ yo male with MVP and OSA who presented on ___ with
+malaise and fevers to 104 after routine dental cleaning found to
+have a transaminitis with LFT's >1000. Work up at the OSH was
+negative including tick borne illness, and viral hepatitis. An
+___ and RF were negative. They reported cyclical fevers despite
+treatment with doxycycline. A ferritin was found to be 34,480.
+HLH was considered by heme/onc and ID. A bone marrow biopsy was
+performed and reportedly noted hemophagocytosis. Given worsening
+liver failure, Decadron 20mg was started. He was started on
+vitamin K and lactulose for his liver failure. A rash was noted
+but not described on ___. On ___, his INR rose to 4
+and he started to have epistaxis. This resolved with silver
+nitrate sticks but then returned. He had an episode of
+hematemesis and hematochezia. He was given FFP, sent to the MICU
+and GI was consulted. He was then started on etoposide given
+""worsening clinical status and liver function"". Today, ___,
+he had a second episode of hematochezia. His hemoglobin trended
+down from 14 to 10 but he remained hemodynamically stable
+throughout. Lactulose was discontinued after his episodes of
+hematochezia as he reportedly had no mental status changes. His
+transaminitis peaked and are downtrending but his bilirubin
+continues to rise.
+He is transferred to ___ for further management and a possible 
+transplant workup.
+ 
+Past Medical History:
+mitral valve prolapse
+sleep apnea
+PSH:
+knee arthroplasty
+ 
+Social History:
+___
+Family History:
+-Colon cancer in his father
+ 
+Physical ___ on Admission:
+
+GENL: sitting up in chair, inattentive, eyes closed
+EENT: PERRL, sclerae icteric, crusted black lesions on bottom 
+lip
+NECK: supple
+CARD: RRR, normal S1, S2, no murmurs / rubs / gallops
+PULM: clear to auscultation b/l from ant/lat fields
+ABDM: +BS, soft, NT/ND, no HSM or ascites
+MSK: no joint swelling or erythema
+EXTR: warm and well perfused, no edema, 2+ DP pulses palpable 
+bilaterally, +asterixis
+SKIN: jaundice, multiple cherry angiomas on abdomen, palmar 
+erythema
+NEURO: unable to perform, responds to some basic commands, 
+unable to answer any questions
+
+Exam on Discharge:
+Deceased
+ 
+Pertinent Results:
+ADMISSION LABS:
+=============
+___ 08:45PM   SED RATE-20*
+___ 08:45PM   ___
+___ 08:45PM   ___ PTT-44.4* ___
+___ 08:45PM   PLT COUNT-339
+___ 08:45PM   NEUTS-83.0* LYMPHS-9.9* MONOS-6.4 EOS-0 
+BASOS-0.6
+___ 08:45PM   WBC-9.5 RBC-3.81* HGB-11.5* HCT-35.7* MCV-94 
+MCH-30.1 MCHC-32.2 RDW-13.7
+___ 08:45PM   HCV Ab-NEGATIVE
+___ 08:45PM   ASA-NEG ETHANOL-NEG ACETMNPHN-NEG 
+bnzodzpn-NEG barbitrt-NEG tricyclic-NEG
+___ 08:45PM   HIV Ab-NEGATIVE
+___ 08:45PM   IgG-825 IgA-602* IgM-542*
+___ 08:45PM   CEA-2.0 PSA-0.4 AFP-139.4*
+___ 08:45PM   ___ * TITER-1:40  ___
+___ 08:45PM   AMA-NEGATIVE Smooth-NEGATIVE
+___ 08:45PM   HBsAg-NEGATIVE HBs Ab-BORDERLINE HBc 
+Ab-NEGATIVE HAV Ab-POSITIVE IgM HAV-POSITIVE *
+___ 08:45PM   25OH VitD-16*
+___ 08:45PM   TRIGLYCER-112
+___ 08:45PM   calTIBC-153* ___ TRF-118*
+___ 08:45PM   D-DIMER-2721*
+___ 08:45PM   ALBUMIN-2.9* CALCIUM-8.1* PHOSPHATE-3.8 
+MAGNESIUM-3.2* IRON-177*
+___ 08:45PM   LIPASE-85*
+___ 08:45PM   ALT(SGPT)-3546* AST(SGOT)-922* LD(LDH)-518* 
+ALK PHOS-111 AMYLASE-56 TOT BILI-20.6*
+___ 08:45PM   GLUCOSE-141* UREA N-11 CREAT-0.7 SODIUM-136 
+POTASSIUM-5.7* CHLORIDE-103 TOTAL CO2-24 ANION GAP-15
+___ 11:55PM URINE  BLOOD-NEG NITRITE-NEG PROTEIN-TR 
+GLUCOSE-70 KETONE-NEG BILIRUBIN-MOD UROBILNGN-NEG PH-7.0 
+LEUK-NEG
+___ 11:55PM URINE  COLOR-Yellow APPEAR-Clear SP ___
+___ 11:55PM URINE  bnzodzpn-NEG barbitrt-NEG opiates-NEG 
+cocaine-NEG amphetmn-NEG mthdone-NEG
+
+PERTINENT LABS:
+============
+___ 11:22AM BLOOD ___ PTT-49.5* ___
+___ 12:19AM BLOOD ___ PTT-44.3* ___
+___ 06:29AM BLOOD ___ PTT-43.1* ___
+___ 05:33AM BLOOD ___ PTT-43.3* ___
+___ 05:30AM BLOOD ___ PTT-44.6* ___
+___ 05:10AM BLOOD ___ PTT-41.2* ___
+___ 05:10AM BLOOD ___ PTT-41.2* ___
+___ 04:10AM BLOOD ___
+___ 05:30AM BLOOD Fibrino-97*
+___ 05:10AM BLOOD ___
+___ 05:25PM BLOOD ___
+___ 05:10AM BLOOD Ret Man-.2*
+___ 04:10AM BLOOD ALT-2904* AST-722* LD(LDH)-433* 
+AlkPhos-105 TotBili-20.2*
+___ 11:22AM BLOOD ALT-2935* AST-633* LD(LDH)-404* 
+AlkPhos-110 TotBili-21.7*
+___ 05:00PM BLOOD ALT-2615* AST-573* LD(LDH)-400* 
+AlkPhos-106 TotBili-21.1*
+___ 12:19AM BLOOD ALT-2381* AST-502* AlkPhos-100 
+TotBili-21.7*
+___ 02:55AM BLOOD ALT-2525* AST-475* AlkPhos-103 
+TotBili-21.0*
+___ 06:29AM BLOOD ALT-2219* AST-453* AlkPhos-97 
+TotBili-22.3*
+___ 01:58PM BLOOD ALT-2463* AST-421* AlkPhos-111 
+TotBili-23.5*
+___ 10:00PM BLOOD ALT-1840* AST-378* AlkPhos-92 
+TotBili-21.5*
+___ 05:33AM BLOOD ALT-1626* AST-330* AlkPhos-86 
+TotBili-20.7*
+___ 05:30AM BLOOD ALT-1373* AST-210* AlkPhos-91 
+TotBili-19.4*
+___ 05:10AM BLOOD ALT-1133* AST-188* AlkPhos-96 
+TotBili-21.0*
+___ 05:05AM BLOOD ALT-864* AST-145* AlkPhos-120 
+TotBili-21.5*
+___ 05:10AM BLOOD ALT-749* AST-143* AlkPhos-126 
+TotBili-21.6*
+___ 08:45PM BLOOD D-Dimer-2721*
+___ 01:58PM BLOOD calTIBC-152* ___ TRF-117*
+___ 05:30AM BLOOD Ferritn-7805*
+___ 05:10AM BLOOD Ferritn-7197*
+___ 05:05AM BLOOD Ferritn-6062*
+___ 05:10AM BLOOD Ferritn-6175*
+___ 08:45PM BLOOD Albumin-2.9* Calcium-8.1* Phos-3.8 
+Mg-3.2* Iron-177*
+___ 11:22AM BLOOD Ammonia-139*
+___ 05:10AM BLOOD Cortsol-1.3*
+___ 08:45PM BLOOD 25VitD-16*
+___ 05:10AM BLOOD HAV Ab-POSITIVE
+
+********
+
+LABS AT DISCHARGE:
+===============
+
+IMAGING:
+===============
+___  Portable CXR:
+INDICATION:  Hepatic failure, preoperative chest x-ray.
+ 
+COMPARISON:  ___.
+ 
+FINDINGS:  As compared to the previous radiograph, there is no 
+relevant change.  Normal size of the cardiac silhouette.  
+Moderate tortuosity of the thoracic aorta.  No pleural 
+effusions.  No pneumothorax.  No pneumonia, no pulmonary edema.
+ 
+___ TTE:
+The left atrium is normal in size. No atrial septal defect is 
+seen by 2D or color Doppler. The estimated right atrial pressure 
+is ___ mmHg. Left ventricular wall thickness, cavity size, and 
+global systolic function are normal (LVEF>55%). Due to 
+suboptimal technical quality, a focal wall motion abnormality 
+cannot be fully excluded. with normal free wall contractility. 
+The number of aortic valve leaflets cannot be determined. There 
+is no aortic valve stenosis. No aortic regurgitation is seen. 
+The mitral valve appears structurally normal with trivial mitral 
+regurgitation. There is no pericardial effusion. 
+
+IMPRESSION: Suboptimal image quality. Normal biventricular 
+function. No clinically significant valvular disease is seen.
+
+___ CT Head w/o contrast:
+IMPRESSION:
+1.  No acute intracranial process.
+2.  Likely acute inflammatory disease of the right maxillary 
+sinus.  
+
+CT Abdomen/Pelvis ___
+IMPRESSION:
+1.  No evidence of acute pathology.
+2.  Patent hepatic vasculature. Conventional right hepatic 
+artery. Replaced left hepatic artery. Tight stenosis at the 
+celiac axis with post stenotic dilatation. 
+3.  Diverticulosis without diverticulitis.
+4.  Cholelithiasis without cholecystitis.
+
+___ MRI head w/contrast
+IMPRESSION:
+No acute intracranial abnormality.  No evidence of encephalitis. 
+
+
+EGD ___:
+A tortous esophagus was noted with no esophageal varices, high 
+risk signs or ulcers. Mild antral gastritis was noted with 
+localized erythema. There was no contact bleeding or evidence of 
+ulceration in the stomach. (biopsy)
+A large clean based non bleeding peptic ulcer was noted in the 
+duodenal bulb with no evidence of bleeding. An additional area 
+of ulceration was noted in the first portion of the duodenum 
+with underlying protuberent tissue with mild erythema and no 
+overt signs of bleeding. In order to establish a better view of 
+the area the forward viewing diagnostic endoscope was removed 
+and the area was inspected with a side viewing duodenoscope. 
+This area of protuberent tissue is likely a peptic ulcer due to 
+its proximity to the clean based peptic ulcer noted in the 
+duodenal bulb thus no biopsies were performed Reevlaution of the 
+area is recommended with in ___ weeks duration.
+Otherwise normal EGD to third part of the duodenum 
+
+PATHOLOGY:
+___ transjugular liver biopsy: 
+1. Prominent bile ductular proliferation with associated 
+neutrophils,
+marked canalicular and hepatocellular cholestasis, and 
+associated
+feathery degeneration of hepatocytes.
+
+2. Iron stain shows marked iron deposition within ___ cells 
+and
+within hepatocytes consistent with the patient's history of
+hemophagocytic syndrome.
+
+3. No steatosis, viral cytopathic effect, or overt necrosis are 
+seen.
+Immunostains for cytomegalovirus and herpes simplex viruses 1 
+and 2 are
+negative, both with satisfactory controls.
+
+4. Trichrome stain shows some prominent fibrosis in areas of 
+ductular
+proliferation, but no evidence of advanced fibrosis.
+
+5. An immunostain for CD68 has also been examined.
+
+Note:The prominent features in this biopsy are biliary in nature
+suggesting possible causes of systemic infection (sepsis), 
+ascending
+cholangitis, or duct obstruction.  No characteristic overt 
+histologic
+features of acute viral hepatitis A or herpes simplex hepatitis 
+are
+seen in this sample. The findings are discussed with Dr. ___ 
+___
+via telephone by Dr. ___ on ___.
+
+Upper GI Biopsy: PATHOLOGIC DIAGNOSIS:
+Gastric antrum, mucosal biopsy: Antral/corpus mucosa with no 
+diagnostic abnormalities recognized.
+
+CXR (___): IMPRESSION: 
+  
+1.  Left PICC with tip terminating within the right atrium.  For 
+placement of tip within the low superior vena cava, the line 
+would have to be pulled back 3-4 cm.  
+  
+2.  Right mid lung consolidation, new since ___, 
+concerning for 
+pneumonia.   
+
+ 
+Brief Hospital Course:
+Mr. ___ is a ___ year old gentleman with PMH significant for 
+OSA and MVP who was transferred from the ___ on 
+___ for acute liver failure, found to have acute hepatitis A 
+infection and reactive HLH.  Patient deteriorated clinically 
+during his hospitalization and was converted to comfort measures 
+only on ___ in line with his stated wishes.  Patient passed 
+away on the morning of ___. 
+
+# Acute liver failure: most likely ___ hepatitis A infection. On 
+arrival, LFTs were elevated to ALT/AST of ___ with a 
+bilirubin of 20.6 and INR of 3.0. Hepatitis serologies returned 
+positive for hepatitis A IgM. Subsequent testing for hepatitis A 
+viral RNA by qualitative PCR was detected. Thus, acute liver 
+failure was attributed to hepatitis A.  Biopsy of liver was done 
+on ___, showed changes consistent with diagnosis of HLH as well 
+changes associated with cholestasis of sepsis.  Patient was 
+treated supportively.  Decision was made to make patient CMO on 
+___, patient passed away on the morning of ___. 
+
+# Hemophagocytic lymphohistiocytosis: Patient met ___ criteria 
+for HLH. Bone marrow biopsy from OSH consistent with HLH and 
+repeat biopsy on ___ at ___ also revealed hemophagocytic 
+histiocytes. Patient treated with 1 dose of etoposide prior to 
+transfer to ___. Most likely ___ hepatitis A vs HSV viral 
+infection rather than primary infection. Patient started on 
+dexamethasone treatment course: initially treated with 10 mg/m2 
+daily x 2 weeks, on ___ was transitioned to 5 mg/m2 daily, 
+however given lack of improvement he was again placed on 10mg/m2 
+on ___.  Liver biopsy did reveal some hemophagocytic kuppfer 
+cells consistent with HLH.  The patient was transfered to the 
+heme/onc service on ___ for further treatment of HLH.   
+Patient received on dose of etoposide.  Decision was made on 
+___ with patient, and in-line with his wishes, and in 
+conjunction with his family to seek comfort measures.  Patient 
+was made CMO on ___ and expired on the morning on ___.
+
+# HSV-1 infection: Lesions on the patient's lower lip were noted 
+which per wife developed at ___ days after 
+admission. Lesions were DFA positive for HSV-1. Patient treated 
+with IV acyclovir. Given his continued immunosuppression with 
+prednisone, he was then continued on prophylactic valacyclovir. 
+On ___ it was noted that the patient had lesions over his back 
+and buttock thought to be HSV and he was placed back on 
+treatment dose IV acyclovir. Dermatology was consulted and sent 
+the lesions for culture and DFA which were negative for HSV and 
+VZV.  Medications were stopped on ___ as patient was 
+transitioned to comfort measures only.
+
+# Klebsiella bacteremia: Blood cultures from ___ grew 
+Klebsiella and patient treated with 2 week course of 
+ceftriaxone. Source of bacteremia most likely from emphasematous 
+cystitis or translocation from bowel from SBO. Subsequent 
+surveillence cultures were negative. 
+
+# Emphasematous Cystitis:  Noted on CT scan of abdomen while 
+patient had rising lactate. Urology consultation recommended 
+medical management. Patient treated with 2 weeks ceftriaxone as 
+above. Subsequent urine cultures were all no growth. 
+
+# Ileus: CT abd/pelvis on ___ showed ileus after patient 
+without BM or passing gas for ___ days. Patient treated with 
+bowel rest and diet was advanced slowly. Resolved after 4 days 
+and patient was having bowel movements subsequently.
+
+# Encephalopathy: Most likely ___ acute liver failure. CT Head 
+was without any acute intracranial process.  MRI w/&w/o contrast 
+was also unrevealing for any indication of HSV encephalitis.  
+His mentation improved slowly with continued supportive care.  
+He was evaluated by ___ for his deconditioning and fall risk.  
+Patient's overall condition deteriorated later in hospital 
+course, and was intermittently oriented.  Decision was made to 
+transition to CMO on ___ based on patient's stated wishes and 
+in conjunction with patient's family, patient passed away on the 
+morning of ___.
+
+# Adrenal insufficiency: Due to patient's syncopal episode, 
+continued orthostatic vital signs, and low AM cortisol levels, 
+patient was started on fludrocortisone daily. Patient continued 
+to have orthostatic hypotension and for this reason was also 
+started on midodrine.  Medications were discontinued on ___ 
+due to new status as comfort measures only. 
+
+# Syncope: Patient had one episode of syncope on ___ and 
+another on ___.  These were both witnessed events and one 
+was in the setting of post-micturation. Patient was orthostatic 
+and he was started on fludrocortisone and midodrine as above. He 
+was monitored on telemetry without any events.
+
+# Chest pain: Patient developed sudden onset chest pain on 
+___ with new T wave inversions and a troponin of 0.05 and 
+CK-MB of 25. Troponin declined to 0.04 after 24 hours 
+observation and cardiology consultation thought pain most likely 
+non-cardiac. Given pain is most prominent after eating, pain is 
+most likely reflux. He was continued on pantoprazole 40mg BID.  
+This was discontinued on discharge as patient was made CMO.
+
+# Duodenal Ulcers: Given above chest pain without relief on 
+pantoprazole the patient was sent for EGD on ___. Showed 
+mild antral gastritis, large clean based non-bleeding peptic 
+ulcer in duodenal bulb, and an additional ulceration with 
+erythema in the first part of the duodenum with protuberent 
+tissue most likely peptic ulcer. Biopsy of antrum showed 
+antral/corpus mucosa with no diagnostic abnormalities.  Patient 
+was treated with PPI and GI cocktail.  
+
+# Pancytopenia: WBC, hct, and platelets noted to be downtrending 
+throughout admission to nadir of 2.0/___.  Pancyotpenia likely 
+multifactorial, ___ HLH and liver failure. Patient was treated 
+with steroids for HLH and received a single dose of Etoposide 
+prior to being made CMO.
+
+# Nutrition:  Albumin on admission is 2.9.  Nutrition is 
+critical in acute liver failure and patient not likely meeting 
+caloric needs especially while encephalopathic.  He was seen by 
+nutrition and supplemented with Ensure Plus TID with meals.  
+Patient's appetite decreased and his mental status declined over 
+last few days of admission prior to being made CMO.  During 
+family meeting prior to discharge, patient was clear and 
+coherent and expressed wishes to be made CMO.  In conjunction 
+with his family and in line with his wishes, patient was 
+transitioned to comfort measures on ___.
+
+# RUE DVT: Diagnosed on ___, new PICC line was placed in other 
+arm.  Patient was initially treated with anticoagulation, 
+however due to continued oozing from line site, this was 
+discontinued.
+
+# HCAP: Incidentally found lung consolidation on ___ during 
+placement of new PICC line.  Patient was started on antibiotics 
+for treatment of HCAP.  Antibiotics were discontinued on ___ 
+as patient was made comfort measures only. 
+
+ 
+Medications on Admission:
+The Preadmission Medication list is accurate and complete.
+1. This patient is not taking any preadmission medications
+
+ 
+Discharge Medications:
+None.  Patient deceased.
+ 
+Discharge Disposition:
+Expired
+ 
+Discharge Diagnosis:
+Primary: Acute Liver Failure
+              Hemophagocytic Lymphohistiocytosis
+              HSV 1
+
+ 
+Discharge Condition:
+Deceased.
+ 
+Discharge Instructions:
+Deceased.
+ 
+Followup Instructions:
+___
+"," 
+                      Unit        
+ 
+ Admission Date                     Discharge Date        
+ 
+ Date Birth                    Sex     M 
+ 
+ Service  MEDICINE 
+ 
+ Allergies  
+ Amoxicillin  azithromycin 
+ 
+ Attending     
+ 
+ Chief Complaint  
+ Liver Failure 
+ 
+ Major Surgical Invasive Procedure  
+     Bone marrow biopsy 
+     Liver biopsy 
+     EGD 
+
+ 
+ History Present Illness  
+    yo male MVP OSA presented    
+ malaise fevers  routine dental cleaning found 
+ transaminitis LFT    Work OSH 
+ negative including tick borne illness  viral hepatitis  
+    RF negative  reported cyclical fevers despite 
+ treatment doxycycline  ferritin found   
+ HLH considered heme  onc ID  bone marrow biopsy 
+ performed reportedly noted hemophagocytosis  Given worsening 
+ liver failure  Decadron  mg started  started 
+ vitamin K lactulose liver failure  rash noted 
+ described         INR rose  
+ started epistaxis  resolved silver 
+ nitrate sticks returned  episode 
+ hematemesis hematochezia  given FFP  sent MICU 
+ GI consulted  started etoposide given 
+  worsening clinical status liver function   Today      
+ second episode hematochezia  hemoglobin trended 
+   remained hemodynamically stable 
+  Lactulose discontinued episodes 
+ hematochezia reportedly mental status changes  
+ transaminitis peaked downtrending bilirubin 
+ continues rise  
+ transferred    management possible 
+ transplant workup  
+ 
+ Past Medical History  
+ mitral valve prolapse 
+ sleep apnea 
+ PSH  
+ knee arthroplasty 
+ 
+ Social History  
+    
+ Family History  
+ Colon cancer father 
+ 
+ Physical    Admission  
+
+ GENL  sitting chair  inattentive  eyes closed 
+ EENT  PERRL  sclerae icteric  crusted black lesions 
+ lip 
+ NECK  supple 
+ CARD  RRR  normal S  S  murmurs  rubs  gallops 
+ PULM  clear auscultation b  l ant  lat fields 
+ ABDM   BS  soft  NT  ND  HSM ascites 
+ MSK  joint swelling erythema 
+ EXTR  warm perfused  edema    DP pulses palpable 
+ bilaterally   asterixis 
+ SKIN  jaundice  multiple cherry angiomas abdomen  palmar 
+ erythema 
+ NEURO  unable perform  responds basic commands  
+ unable answer questions 
+
+ Exam Discharge  
+ Deceased 
+ 
+ Pertinent Results  
+ ADMISSION LABS  
+              
+    PM    SED RATE  
+    PM       
+    PM       PTT     
+    PM    PLT COUNT 
+    PM    NEUTS  LYMPHS  MONOS EOS 
+ BASOS 
+    PM    WBC RBC  HGB  HCT  MCV 
+ MCH MCHC RDW 
+    PM    HCV Ab  NEGATIVE 
+    PM    ASA  NEG ETHANOL  NEG ACETMNPHN  NEG 
+ bnzodzpn  NEG barbitrt  NEG tricyclic  NEG 
+    PM    HIV Ab  NEGATIVE 
+    PM    IgG IgA  IgM  
+    PM    CEA PSA AFP  
+    PM        TITER      
+    PM    AMA  NEGATIVE Smooth  NEGATIVE 
+    PM    HBsAg  NEGATIVE HBs Ab  BORDERLINE HBc 
+ Ab  NEGATIVE HAV Ab  POSITIVE IgM HAV  POSITIVE  
+    PM    OH VitD  
+    PM    TRIGLYCER 
+    PM    calTIBC     TRF  
+    PM    D  DIMER  
+    PM    ALBUMIN  CALCIUM  PHOSPHATE 
+ MAGNESIUM  IRON  
+    PM    LIPASE  
+    PM    ALTSGPT  ASTSGOT  LDLDH  
+ ALK PHOS AMYLASE TOT BILI  
+    PM    GLUCOSE  UREA N CREAT SODIUM 
+ POTASSIUM  CHLORIDE TOTAL CO   ANION GAP 
+    PM URINE   BLOOD  NEG NITRITE  NEG PROTEIN  TR 
+ GLUCOSE KETONE  NEG BILIRUBIN  MOD UROBILNGN  NEG PH 
+ LEUK  NEG 
+    PM URINE   COLOR  Yellow APPEAR  Clear SP    
+    PM URINE   bnzodzpn  NEG barbitrt  NEG opiates  NEG 
+ cocaine  NEG amphetmn  NEG mthdone  NEG 
+
+ PERTINENT LABS  
+             
+    AM BLOOD    PTT     
+    AM BLOOD    PTT     
+    AM BLOOD    PTT     
+    AM BLOOD    PTT     
+    AM BLOOD    PTT     
+    AM BLOOD    PTT     
+    AM BLOOD    PTT     
+    AM BLOOD    
+    AM BLOOD Fibrino  
+    AM BLOOD    
+    PM BLOOD    
+    AM BLOOD Ret Man  
+    AM BLOOD ALT  AST  LDLDH  
+ AlkPhos TotBili  
+    AM BLOOD ALT  AST  LDLDH  
+ AlkPhos TotBili  
+    PM BLOOD ALT  AST  LDLDH  
+ AlkPhos TotBili  
+    AM BLOOD ALT  AST  AlkPhos 
+ TotBili  
+    AM BLOOD ALT  AST  AlkPhos 
+ TotBili  
+    AM BLOOD ALT  AST  AlkPhos 
+ TotBili  
+    PM BLOOD ALT  AST  AlkPhos 
+ TotBili  
+    PM BLOOD ALT  AST  AlkPhos 
+ TotBili  
+    AM BLOOD ALT  AST  AlkPhos 
+ TotBili  
+    AM BLOOD ALT  AST  AlkPhos 
+ TotBili  
+    AM BLOOD ALT  AST  AlkPhos 
+ TotBili  
+    AM BLOOD ALT  AST  AlkPhos 
+ TotBili  
+    AM BLOOD ALT  AST  AlkPhos 
+ TotBili  
+    PM BLOOD D  Dimer  
+    PM BLOOD calTIBC     TRF  
+    AM BLOOD Ferritn  
+    AM BLOOD Ferritn  
+    AM BLOOD Ferritn  
+    AM BLOOD Ferritn  
+    PM BLOOD Albumin  Calcium  Phos 
+ Mg  Iron  
+    AM BLOOD Ammonia  
+    AM BLOOD Cortsol  
+    PM BLOOD VitD  
+    AM BLOOD HAV Ab  POSITIVE 
+
+         
+
+ LABS DISCHARGE  
+                
+
+ IMAGING  
+                
+      Portable CXR  
+ INDICATION    Hepatic failure  preoperative chest x  ray  
+ 
+ COMPARISON        
+ 
+ FINDINGS    compared previous radiograph  
+ relevant change    Normal size cardiac silhouette   
+ Moderate tortuosity thoracic aorta    pleural 
+ effusions    pneumothorax    pneumonia  pulmonary edema  
+ 
+    TTE  
+ left atrium normal size  atrial septal defect 
+ seen D color Doppler  estimated right atrial pressure 
+    mmHg  Left ventricular wall thickness  cavity size  
+ global systolic function normal  LVEF    
+ suboptimal technical quality  focal wall motion abnormality 
+ fully excluded  normal free wall contractility  
+ number aortic valve leaflets determined  
+ aortic valve stenosis  aortic regurgitation seen  
+ mitral valve appears structurally normal trivial mitral 
+ regurgitation  pericardial effusion  
+
+ IMPRESSION  Suboptimal image quality  Normal biventricular 
+ function  clinically significant valvular disease seen  
+
+    CT Head wo contrast  
+ IMPRESSION  
+     acute intracranial process  
+     Likely acute inflammatory disease right maxillary 
+ sinus   
+
+ CT Abdomen  Pelvis    
+ IMPRESSION  
+     evidence acute pathology  
+     Patent hepatic vasculature  Conventional right hepatic 
+ artery  Replaced left hepatic artery  Tight stenosis 
+ celiac axis post stenotic dilatation  
+     Diverticulosis diverticulitis  
+     Cholelithiasis cholecystitis  
+
+    MRI head w  contrast 
+ IMPRESSION  
+ acute intracranial abnormality    evidence encephalitis  
+
+
+ EGD     
+ tortous esophagus noted esophageal varices  high 
+ risk signs ulcers  Mild antral gastritis noted 
+ localized erythema  contact bleeding evidence 
+ ulceration stomach   biopsy  
+ large clean based non bleeding peptic ulcer noted 
+ duodenal bulb evidence bleeding  additional area 
+ ulceration noted portion duodenum 
+ underlying protuberent tissue mild erythema 
+ overt signs bleeding  order establish better view 
+ area forward viewing diagnostic endoscope removed 
+ area inspected viewing duodenoscope  
+ area protuberent tissue likely peptic ulcer 
+ proximity clean based peptic ulcer noted 
+ duodenal bulb biopsies performed Reevlaution 
+ area recommended    weeks duration  
+ normal EGD duodenum 
+
+ PATHOLOGY  
+    transjugular liver biopsy  
+   Prominent bile ductular proliferation associated 
+ neutrophils  
+ marked canalicular hepatocellular cholestasis  
+ associated 
+ feathery degeneration hepatocytes  
+
+   Iron stain shows marked iron deposition    cells 
+ 
+ hepatocytes consistent patient history 
+ hemophagocytic syndrome  
+
+   steatosis  viral cytopathic effect  overt necrosis 
+ seen  
+ Immunostains cytomegalovirus herpes simplex viruses  
+  
+ negative  satisfactory controls  
+
+   Trichrome stain shows prominent fibrosis areas 
+ ductular 
+ proliferation  evidence advanced fibrosis  
+
+   immunostain CD examined  
+
+ Note  prominent features biopsy biliary nature 
+ suggesting possible causes systemic infection  sepsis   
+ ascending 
+ cholangitis  duct obstruction    characteristic overt 
+ histologic 
+ features acute viral hepatitis herpes simplex hepatitis 
+ 
+ seen sample  findings discussed Dr    
+    
+ telephone Dr        
+
+ Upper GI Biopsy  PATHOLOGIC DIAGNOSIS  
+ Gastric antrum  mucosal biopsy  Antral  corpus mucosa 
+ diagnostic abnormalities recognized  
+
+ CXR      IMPRESSION  
+  
+     Left PICC tip terminating right atrium    
+ placement tip low superior vena cava  line 
+ pulled    cm   
+  
+     Right mid lung consolidation  new     
+ concerning 
+ pneumonia    
+
+ 
+ Brief Hospital Course  
+ Mr       year old gentleman PMH significant 
+ OSA MVP transferred    
+    acute liver failure  found acute hepatitis 
+ infection reactive HLH    Patient deteriorated clinically 
+ hospitalization converted comfort measures 
+    line stated wishes    Patient passed 
+ away morning     
+
+  Acute liver failure  likely    hepatitis infection  
+ arrival  LFTs elevated ALT  AST    
+ bilirubin  INR   Hepatitis serologies returned 
+ positive hepatitis IgM Subsequent testing hepatitis 
+ viral RNA qualitative PCR detected   acute liver 
+ failure attributed hepatitis A   Biopsy liver 
+     showed changes consistent diagnosis HLH 
+ changes associated cholestasis sepsis    Patient 
+ treated supportively    Decision patient CMO 
+     patient passed away morning     
+
+  Hemophagocytic lymphohistiocytosis  Patient met    criteria 
+ HLH  Bone marrow biopsy OSH consistent HLH 
+ repeat biopsy       revealed hemophagocytic 
+ histiocytes  Patient treated  dose etoposide prior 
+ transfer     likely    hepatitis vs HSV viral 
+ infection primary infection  Patient started 
+ dexamethasone treatment course  initially treated  mg  m 
+ daily x  weeks     transitioned  mg  m daily  
+ given lack improvement placed mg  m 
+       Liver biopsy reveal hemophagocytic kuppfer 
+ cells consistent HLH    patient transfered 
+ heme  onc service    treatment HLH    
+ Patient received dose etoposide    Decision 
+    patient   line wishes  
+ conjunction family seek comfort measures    Patient 
+ CMO    expired morning     
+
+  HSV infection  Lesions patient lower lip noted 
+ wife developed    days 
+ admission  Lesions DFA positive HSV  Patient treated 
+ IV acyclovir  Given continued immunosuppression 
+ prednisone  continued prophylactic valacyclovir  
+    noted patient lesions 
+ buttock thought HSV placed 
+ treatment dose IV acyclovir  Dermatology consulted sent 
+ lesions culture DFA negative HSV 
+ VZV    Medications stopped    patient 
+ transitioned comfort measures  
+
+  Klebsiella bacteremia  Blood cultures    grew 
+ Klebsiella patient treated  week course 
+ ceftriaxone  Source bacteremia likely emphasematous 
+ cystitis translocation bowel SBO  Subsequent 
+ surveillence cultures negative  
+
+  Emphasematous Cystitis    Noted CT scan abdomen 
+ patient rising lactate  Urology consultation recommended 
+ medical management  Patient treated  weeks ceftriaxone 
+  Subsequent urine cultures growth  
+
+  Ileus  CT abd  pelvis    showed ileus patient 
+ BM passing gas    days  Patient treated 
+ bowel rest diet advanced slowly  Resolved  days 
+ patient having bowel movements subsequently  
+
+  Encephalopathy  likely    acute liver failure  CT Head 
+ acute intracranial process    MRI ww  o contrast 
+ unrevealing indication HSV encephalitis   
+ mentation improved slowly continued supportive care   
+ evaluated    deconditioning fall risk   
+ Patient overall condition deteriorated later hospital 
+ course  intermittently oriented    Decision 
+ transition CMO    based patient stated wishes 
+ conjunction patient family  patient passed away 
+ morning     
+
+  Adrenal insufficiency  patient syncopal episode  
+ continued orthostatic vital signs  low cortisol levels  
+ patient started fludrocortisone daily  Patient continued 
+ orthostatic hypotension reason 
+ started midodrine    Medications discontinued    
+ new status comfort measures  
+
+  Syncope  Patient episode syncope    
+       witnessed events 
+ setting post  micturation  Patient orthostatic 
+ started fludrocortisone midodrine  
+ monitored telemetry events  
+
+  Chest pain  Patient developed sudden onset chest pain 
+    new T wave inversions troponin  
+ CK  MB   Troponin declined   hours 
+ observation cardiology consultation thought pain likely 
+ non  cardiac  Given pain prominent eating  pain 
+ likely reflux  continued pantoprazole  mg BID   
+ discontinued discharge patient CMO  
+
+  Duodenal Ulcers  Given chest pain relief 
+ pantoprazole patient sent EGD     Showed 
+ mild antral gastritis  large clean based non  bleeding peptic 
+ ulcer duodenal bulb  additional ulceration 
+ erythema duodenum protuberent 
+ tissue likely peptic ulcer  Biopsy antrum showed 
+ antral  corpus mucosa diagnostic abnormalities    Patient 
+ treated PPI GI cocktail   
+
+  Pancytopenia  WBC  hct  platelets noted downtrending 
+ admission nadir        Pancyotpenia likely 
+ multifactorial     HLH liver failure  Patient treated 
+ steroids HLH received single dose Etoposide 
+ prior CMO  
+
+  Nutrition    Albumin admission     Nutrition 
+ critical acute liver failure patient likely meeting 
+ caloric needs especially encephalopathic    seen 
+ nutrition supplemented Ensure Plus TID meals   
+ Patient appetite decreased mental status declined 
+ days admission prior CMO    
+ family meeting prior discharge  patient clear 
+ coherent expressed wishes CMO    conjunction 
+ family line wishes  patient 
+ transitioned comfort measures     
+
+  RUE DVT  Diagnosed     new PICC line placed 
+ arm    Patient initially treated anticoagulation  
+ continued oozing line site  
+ discontinued  
+
+  HCAP  Incidentally found lung consolidation    
+ placement new PICC line    Patient started antibiotics 
+ treatment HCAP    Antibiotics discontinued    
+ patient comfort measures  
+
+ 
+ Medications Admission  
+ Preadmission Medication list accurate complete  
+   patient taking preadmission medications 
+
+ 
+ Discharge Medications  
+    Patient deceased  
+ 
+ Discharge Disposition  
+ Expired 
+ 
+ Discharge Diagnosis  
+ Primary  Acute Liver Failure 
+               Hemophagocytic Lymphohistiocytosis 
+               HSV  
+
+ 
+ Discharge Condition  
+ Deceased  
+ 
+ Discharge Instructions  
+ Deceased  
+ 
+ Followup Instructions  
+    
+"

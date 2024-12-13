@@ -1,5 +1,6 @@
 my_dbt_project:
   target: dev
+  #schema: staging_mimic
   outputs:
     dev:
       type: snowflake
@@ -12,7 +13,7 @@ my_dbt_project:
       #role: [user role]
       database: mimic_iv_medi_assist
       warehouse: animal_task_wh
-      schema: staging
+      schema: prod_mimic
       #threads: [1 or more]
       client_session_keep_alive: False
       #query_tag: [anything]
