@@ -4,6 +4,18 @@ MediAssist is a comprehensive healthcare solution that leverages advanced data e
 
 ---
 
+## 📊 Dataset: MIMIC-IV 🩺
+
+MIMIC-IV is a publicly available dataset that includes comprehensive de-identified healthcare information. It is extensively used in the medical research and data science community for developing machine learning models and healthcare solutions.
+
+- **Content**: Includes patient admissions, discharge summaries, clinical notes, and diagnosis data.
+- **Version**: 3.1
+- **Access**: [MIMIC-IV Dataset](https://physionet.org/content/mimiciv/3.1/)
+
+> ⚠️ **Note**: Access to the dataset requires credentialed approval and adherence to ethical guidelines.
+
+---
+
 ## 📌 Project Details
 
 **MediAssist** focuses on:
