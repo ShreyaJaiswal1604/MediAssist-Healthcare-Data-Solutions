@@ -29,7 +29,7 @@ MediAssist is a comprehensive healthcare solution that leverages advanced data e
 
 ## 🏗️ Project Architecture
 
-![Architecture Diagram](path/to/architecture_image.png)  
+![Architecture Diagram](https://github.com/ShreyaJaiswal1604/MediAssist-Healthcare-Data-Solutions/blob/main/images/Mediassist-architecture.jpeg)  
 **"MediAssist Healthcare Data Workflow: From Raw Ingestion to Clinician Insights"**
 
 ### Workflow:
@@ -79,5 +79,82 @@ The **MediAssist UI** empowers healthcare providers to:
 
 #### **1. Clone the Repository**
 ```bash
-git clone https://github.com/your-username/MediAssist-Healthcare-Data-Solutions.git
+git clone https://github.com/ShreyaJaiswal1604/MediAssist-Healthcare-Data-Solutions.git
 cd MediAssist-Healthcare-Data-Solutions
+```
+
+#### **2. Create a Virtual Environment**
+```bash
+python3 -m venv venv
+source venv/bin/activate
+```
+
+#### **3. Install Dependencies**
+```bash
+pip install -r requirements.txt
+
+```
+
+#### **4. Configure DBT**
+- Add your profiles.yml configuration for Snowflake:
+```bash
+my_dbt_project:
+  target: dev
+  outputs:
+    dev:
+      type: snowflake
+      account: <your_account>
+      user: <your_username>
+      password: <your_password>
+      role: <your_role>
+      database: mimic_iv_medi_assist
+      warehouse: <your_warehouse>
+      schema: prod_mimic
+      threads: 4
+      client_session_keep_alive: False
+
+```
+#### **5. Run DBT Models**
+```bash
+cd dbt
+dbt run
+```
+
+
+#### **6. Launch the Streamlit Application**
+```bash
+streamlit run app.py
+```
+
+#### **7. Generate DBT Documentation**
+```bash
+dbt docs generate
+dbt docs serve
+```
+
+#### **7. Generate DBT Documentation**
+```bash
+* Navigate to the Discharge Details page.
+* Enter the patient and admission IDs.
+* View the report details.
+* Click Generate PDF Report to download a well-formatted report.
+```
+
+
+## 🚀 Future Enhancements
+
+- 🌐 **Integration with External EHR Systems**: Enable real-time updates and seamless data flow.
+- 📊 **Advanced Analytics Dashboards**: Provide deeper insights and enhance decision-making.
+- 🩺 **Additional Use Cases**: Explore models for disease prediction and other advanced healthcare solutions.
+
+---
+
+## 🤝 Contribution
+
+We welcome contributions! Feel free to fork this repository, make improvements, and raise pull requests. Together, let's build a better healthcare solution. 💡
+
+---
+
+## 📄 License
+
+This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) file for more details. 📜
