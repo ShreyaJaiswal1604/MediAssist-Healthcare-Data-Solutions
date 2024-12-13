@@ -1,4 +1,4 @@
-# MediAssist Healthcare Data Solutions 🏥💻
+# 🌟  MediAssist Healthcare Data Solutions 🏥💻
 
 MediAssist is a comprehensive healthcare solution that leverages advanced data engineering and AI capabilities to enhance medical coding accuracy and improve patient outcomes through risk stratification. By utilizing the MIMIC-IV dataset, MediAssist establishes a robust pipeline for ingesting, transforming, and analyzing healthcare data, culminating in an intuitive UI for clinicians to access actionable insights.
 
