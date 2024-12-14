@@ -41,7 +41,7 @@ MIMIC-IV is a publicly available dataset that includes comprehensive de-identifi
 
 ## 🏗️ Project Architecture
 
-![Architecture Diagram](https://github.com/ShreyaJaiswal1604/MediAssist-Healthcare-Data-Solutions/blob/main/images/Mediassist-architecture.jpeg)  
+![Architecture Diagram](https://github.com/ShreyaJaiswal1604/MediAssist-Healthcare-Data-Solutions/blob/main/images/Final-architecture%20-image.jpeg)  
 **"MediAssist Healthcare Data Workflow: From Raw Ingestion to Clinician Insights"**
 
 ### Workflow:
