@@ -3,7 +3,14 @@
 MediAssist is a comprehensive healthcare solution that leverages advanced data engineering and AI capabilities to enhance medical coding accuracy and improve patient outcomes through risk stratification. By utilizing the MIMIC-IV dataset, MediAssist establishes a robust pipeline for ingesting, transforming, and analyzing healthcare data, culminating in an intuitive UI for clinicians to access actionable insights.
 
 ---
+## 🌐 Live Demo
 
+Experience **MediAssist AI** in action on Streamlit:  
+[👉 Click here to access the application!](https://mediassist-ai.streamlit.app/)
+
+Explore the features and capabilities of our application designed to enhance healthcare workflows and decision-making.
+
+---
 ## 📊 Dataset: MIMIC-IV 🩺
 
 MIMIC-IV is a publicly available dataset that includes comprehensive de-identified healthcare information. It is extensively used in the medical research and data science community for developing machine learning models and healthcare solutions.
