@@ -4,11 +4,16 @@ import streamlit as st
 
 # Header and Application Image
 # Center-align the heading and remove gap above MediAssist
+# Center-align the heading and remove extra spacing
+
+# Center-align the heading and remove extra spacing
+# Center-align the heading and remove extra spacing
 st.markdown("""
     <style>
         .center-heading {
             text-align: center;
             margin-top: 0; /* Remove gap above heading */
+            margin-bottom: 0; /* Remove gap below heading */
         }
         .rainbow-header {
             text-align: center;
@@ -16,24 +21,32 @@ st.markdown("""
             -webkit-background-clip: text;
             color: transparent;
             font-size: 2.5em;
-            margin-top: 0; /* Remove gap above heading */
+            line-height: 1; /* Remove line height spacing */
+            margin: 0; /* Remove all gaps above and below heading */
+        }
+        .full-width-banner {
+            width: 100%;
+            height: auto;
         }
     </style>
 """, unsafe_allow_html=True)
 
+# Rainbow Divider
+st.markdown("<hr style='border: none; height: 2px; background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet); margin: 0;'>", unsafe_allow_html=True)
+
 # Rainbow Header
-# Rainbow Divider
-st.header("", divider="rainbow")
 st.markdown("<h1 class='rainbow-header'>MediAssist</h1>", unsafe_allow_html=True)
+
 # Rainbow Divider
-st.header("", divider="rainbow")
+st.markdown("<hr style='border: none; height: 2px; background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet); margin: 0;'>", unsafe_allow_html=True)
+
 st.markdown("<h3 class='center-heading'>An Innovative AI-driven Healthcare Solution</h3>", unsafe_allow_html=True)
 st.markdown("<p class='center-heading'>Created by Yash Pankhania, Shreya Jaiswal, and Utkarsha Shirke</p>", unsafe_allow_html=True)
 
-# Add the image as a centered banner
-image_url = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUHsukDlu-Hr8VrNSeS5tm1HRXa9iOXNRhhw&s"
-st.markdown(f"""<div style='text-align: center;'>
-                <img src='{image_url}' width='70%'>
+# Add the GIF as a full-page banner
+gif_url = "https://github.com/ShreyaJaiswal1604/MediAssist-Healthcare-Data-Solutions/blob/main/streamlit/images/healthcare-welcome.gif?raw=true"
+st.markdown(f"""<div>
+                <img src='{gif_url}' class='full-width-banner'>
               </div>""", unsafe_allow_html=True)
 
 # Add a horizontal line
@@ -41,7 +54,7 @@ st.markdown("---")
 
 # Add the description
 st.write("MediAssist is a cutting-edge healthcare solution powered by AI, designed to transform patient care and streamline healthcare processes.")
-   
+
 #########################################################################################
 
 # Introduction
