@@ -13,6 +13,15 @@ Experience **MediAssist AI** in action on Streamlit:
 Explore the features and capabilities of our application designed to enhance healthcare workflows and decision-making.
 
 ---
+
+## 🎥 Demo Video
+
+Watch the demo video showcasing MediAssist in action:
+
+https://github.com/user-attachments/assets/d677b252-4877-4ad1-9a10-8620dae5a785
+
+
+---
 ## 📊 Dataset: MIMIC-IV 🩺
 
 MIMIC-IV is a publicly available dataset that includes comprehensive de-identified healthcare information. It is extensively used in the medical research and data science community for developing machine learning models and healthcare solutions.
