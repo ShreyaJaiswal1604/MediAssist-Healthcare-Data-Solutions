@@ -1,3 +1,5 @@
+---
+
 # 🌟  MediAssist Healthcare Data Solutions 🏥💻
 
 MediAssist is a comprehensive healthcare solution that leverages advanced data engineering and AI capabilities to enhance medical coding accuracy and improve patient outcomes through risk stratification. By utilizing the MIMIC-IV dataset, MediAssist establishes a robust pipeline for ingesting, transforming, and analyzing healthcare data, culminating in an intuitive UI for clinicians to access actionable insights.
@@ -61,6 +63,71 @@ MIMIC-IV is a publicly available dataset that includes comprehensive de-identifi
    - Clinical note summarization and risk stratification results are loaded into the dimension model.
 4. **Fact and Dimension Layers**: Finalized data is stored in **facts and dimensions** for analysis.
 5. **UI Layer**: A Streamlit-based application provides clinicians real-time access to patient insights.
+
+---
+## 🎨 Dimensional Modeling Diagram
+
+Below is the dimensional modeling diagram representing the MediAssist data architecture:
+
+![Dimensional Modeling Diagram](https://github.com/ShreyaJaiswal1604/MediAssist-Healthcare-Data-Solutions/blob/main/images/Architecture.png)
+
+#### **Key Components:**
+
+1. **Fact Tables**:
+   - **FCT_NOTE_SUMMARIZATION**:
+     - Central to summarizing patient history.
+     - Links patient admission details, discharge notes, and pharmacy data.
+   - **FCT_RISK_STRATIFICATION**:
+     - Focuses on assessing patient risk levels.
+     - Stores information about risk levels tied to diagnoses.
+   - **FCT_MEDICAL_CODING**:
+     - Facilitates medical coding operations.
+     - Links diagnosis and procedure codes with medical records.
+
+2. **Dimension Tables**:
+   - **DIM_ADMISSIONS**:
+     - Contains patient admission details such as admission/discharge time, race, insurance, and length of stay.
+   - **DIM_PHARMACY**:
+     - Captures pharmacy-related data, including prescribed medication and its frequency.
+   - **DIM_DISCHARGE**:
+     - Includes discharge summaries, timestamps, and subject-related information.
+   - **DIM_ORG_CODES**:
+     - Holds organizational code descriptions, severity levels, and mortality indicators.
+   - **DIM_MEDICAL_CODES**:
+     - Stores diagnostic and procedure codes with related metadata.
+   - **DIM_ICD_DIAGNOSES_PROCEDURES**:
+     - Contains ICD codes, descriptions, and flags for diagnoses and procedures.
+
+---
+
+#### **Primary Use Cases:**
+
+1. **Patient History Summarization**:
+   - Links data from:
+     - **DIM_ADMISSIONS**: Admission-related details.
+     - **DIM_PHARMACY**: Medication details.
+     - **FCT_NOTE_SUMMARIZATION**: Summarizes patient interactions.
+
+2. **Patient Risk Stratification**:
+   - Combines:
+     - **FCT_RISK_STRATIFICATION**: Records patient risk levels.
+     - **DIM_ORG_CODES**: Risk severity and mortality indicators.
+
+3. **Medical Coding**:
+   - Integrates:
+     - **FCT_MEDICAL_CODING**: Core table for medical coding.
+     - **DIM_MEDICAL_CODES**: Diagnostic codes and metadata.
+     - **DIM_ICD_DIAGNOSES_PROCEDURES**: ICD details for comprehensive reporting.
+
+---
+
+### 🌟 Analysis
+
+This dimensional model ensures efficient data organization to support healthcare analytics and decision-making. It enables clinicians to:
+
+- Summarize patient history for improved care continuity.
+- Identify high-risk patients for timely interventions.
+- Streamline medical coding for accurate billing and reporting.
 
 ---
 
